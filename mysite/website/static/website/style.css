@@ -1,0 +1,99 @@
+
+/*
+ * CSS Variabels
+ */
+:root {
+    --main-red: #C85353;
+    --hover-red: #DA4141;
+    --shadow-red: #da41417e;
+    --gray-color: #f4f4f4;
+    --white-color: #ffffff;
+    --hero-gradient: #00000080;
+    --shadow-black: #00000059;
+}
+
+
+.navbar{
+    border-bottom: #DA4141 4px solid;
+   
+}
+
+.imgBg{
+    height: 50vh;
+    background: url('../img/hero.jpg');
+    background-size:       cover;
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-image:         linear-gradient(#00000080, #00000080), url('../img/hero.jpg');
+    background-image:      -o-linear-gradient(#00000080, #00000080), url('../img/hero.jpg');
+    background-image:    -moz-linear-gradient(#00000080, #00000080), url('../img/hero.jpg');
+    background-image: -webkit-linear-gradient(#00000080, #00000080), url('../img/hero.jpg');
+}
+
+/*
+ * Custom Button
+ */
+ .btn.btn-main {
+    background-color: var(--main-red);
+    border-color: var(--main-red);
+}
+.btn.btn-main:hover {
+    background-color: var(--hover-red);
+    border-color: var(--hover-red);
+}
+.btn.btn-main:focus {
+    box-shadow: 0 0 0 0.2rem var(--shadow-red);
+}
+
+/*
+ * About Section
+ */
+.icon {
+    width: 120px;
+    height: 120px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--main-red);
+    transition:         all 2000ms;
+    -o-transition:      all 2000ms;
+    -moz-transition:    all 2000ms;
+    -webkit-transition: all 2000ms;
+}
+.icon:hover {
+    transform:         scale(1.1) rotate(20deg);
+    -o-transform:      scale(1.1) rotate(20deg);
+    -moz-transform:    scale(1.1) rotate(20deg);
+    -webkit-transform: scale(1.1) rotate(20deg);
+}
+
+/*
+ * Featured Meals Section
+ */
+.card {
+    transition:         all 1000ms;
+    -o-transition:      all 1000ms;
+    -moz-transition:    all 1000ms;
+    -webkit-transition: all 1000ms;
+}
+.card.active {
+    box-shadow: 0 0 16px var(--shadow-black);
+    cursor: pointer;
+}
+
+/*
+ * Order Section
+ */
+ #order {
+     background-color: var(--gray-color);
+ }
+
+/*
+ * Provided CSS
+ */
+/* Carousel predefined style do not change this */
+.carousel-item {
+    height: 65vh;
+}
+
+
+
